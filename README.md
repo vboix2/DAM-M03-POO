@@ -16,7 +16,7 @@ Apunts del mòdul 3 de Desenvolupament d'Aplicacions Multiplataforma.
 ## Activitats
 
 * [Pràctiques](./teoria/Practiques.md)
-* Examen novembre de 2019: [Enunciat](./examens/Examen1_nov19.pdf) - [Solució](./src/examens/nov19)
+* Examen novembre de 2019: [Enunciat](./examens/Examen1_nov19.pdf) - [Solució](./src/main/java/examens/nov19)
 
 ## Recursos
 

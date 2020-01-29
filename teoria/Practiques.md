@@ -15,7 +15,7 @@ Quan el client pren el cafè (mètode beureCafe(TassaCafe)) pot passar:
 
 Implementa l'aplicació en Java per a 20 clients.
 
-[Solució](../src/excepcions/cafeteria)
+[Solució](../src/main/java/excepcions/cafeteria)
 
 ### 2. Fira
 
@@ -42,7 +42,7 @@ Restriccions a tenir en compte:
 * Obtenir la solució, codificant només un bloc try amb un únic bloc catch.
 * No es pot capturar l'excepció Exception: només es poden capturar els errors a partir de classes d'excepció pròpies.
 
-[Solució](../src/excepcions/fira)
+[Solució](../src/main/java/excepcions/fira)
 
 ## Lectura i escriptura d'informació
 
@@ -70,5 +70,5 @@ Ajuda:
 
 BONUS: si vols pots provar d'afegir una opció per a esborrar contactes.
 
-[Solució](../src/fluxos/agenda)
+[Solució](../src/main/java/fluxos/agenda)
 

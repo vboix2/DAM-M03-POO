@@ -35,9 +35,9 @@ Mètodes de la classe ArrayList:
 
 Per recórrer una llista pot fer-se iterant l'índex amb un *for* o iterant els elements amb un *for each*.
 
-[Exemple d'utilització de llistes](../src/colleccions/Llistes.java)
+[Exemple d'utilització de llistes](../src/main/java/colleccions/Llistes.java)
 
-[Aplicació de gestió de notes utilitzant la classe ArrayList](../src/colleccions/notes)
+[Aplicació de gestió de notes utilitzant la classe ArrayList](../src/main/java/colleccions/notes)
 
 ## 3. Taules
 
@@ -56,9 +56,9 @@ Métodes de la classe HashMap:
 
 Per recórrer una taula cal crear una col·lecció amb tots els valors i recórrer la col·lecció amb un *for each*.
 
-[Exemple d'utilització de taules](../src/colleccions/Taules.java)
+[Exemple d'utilització de taules](../src/main/java/colleccions/Taules.java)
 
-[Aplicació d'agenda de contactes utilitzant la classe HashMap](../src/colleccions/agenda)
+[Aplicació d'agenda de contactes utilitzant la classe HashMap](../src/main/java/colleccions/agenda)
 
 ## 4. Conjunts
 
@@ -75,13 +75,13 @@ Mètodes de la classe HashSet:
 
 Per recórrer un conjunt hem d'utilitzar l'iterador *for each*.
 
-[Exemple d'utilització de conjunts](../src/colleccions/Conjunts.java)
+[Exemple d'utilització de conjunts](../src/main/java/colleccions/Conjunts.java)
 
-[Aplicació de gestió de peces utilitzant la classe HashSet](../src/colleccions/peces)
+[Aplicació de gestió de peces utilitzant la classe HashSet](../src/main/java/colleccions/peces)
 
 ## 5. Iteradors
 
-[Exemple d'iterador](../src/colleccions/iterador)
+[Exemple d'iterador](../src/main/java/colleccions/iterador)
 
 ## 6. Recursos
 

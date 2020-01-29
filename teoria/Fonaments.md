@@ -21,7 +21,7 @@ Per manipular els objectes utilitzem els **mètodes** de la classe a la que pert
 Això ho fem indicant el nom de la variables que fa referència a l'objecte, seguida d'un punt '.' i del nom del mètode a utilitzar: *variable.mètode()*.
 Els mètodes també poden requerir paràmetres d'entrada i també caldrà consultar la documentació.
 
-[Exemples de creació i manipulació d'objectes](../src/fonaments/Principal.java)
+[Exemples de creació i manipulació d'objectes](../src/main/java/fonaments/Principal.java)
 
 Els objectes que no s'utilitzen o que han perdut la seva referència s'eliminen automàticament a través del procés *Garbage Collector*.
 També se'l pot cridar de manera manual utilitzant *System.gc()*.
@@ -37,7 +37,7 @@ El nom de la classe ha de coincidir amb el nom del fitxer; a més, és recomanab
 
 El bloc de la classe s'escriu entre claus {} i pot contenir: atributs, iniciadors, constructors i mètodes.
 
-[Exemple de definició d'una classe](../src/fonaments/Compte.java)
+[Exemple de definició d'una classe](../src/main/java/fonaments/Compte.java)
 
 ### 3.2. Atributs
 
@@ -66,7 +66,7 @@ Es tracta de funcions que actuen sobre els objectes de la classe. Han de tenir:
 * Paràmetres d'entrada: Tipus de dada i nom de la variable per als paràmetres d'entrada (entre parèntesis).
 * Cos del mètode: Bloc de codi (entre claus {}) amb les instruccions a executar.
 
-[Exemple de definició i ús de mètodes](../src/fonaments)
+[Exemple de definició i ús de mètodes](../src/main/java/fonaments)
 
 
 ### 3.5. Modificadors i directives
@@ -121,7 +121,7 @@ Per crear-les podem utilitzar el constructor *new String("text")* o crear-les de
 Els objectes *String* permeten operacions de concatenació (+) per crear noves cadenes de text.
 Malgrat tot, aquests objectes mai es modifiquen, es crea un nou objecte que s'apunta des de la mateixa variable.
 
-[Exemple d'utilització de la classe String](../src/fonaments/Text.java)
+[Exemple d'utilització de la classe String](../src/main/java/fonaments/Text.java)
 
 La classe **StringBuilder** representa una cadena de text que pot ser modificada.
 A diferència de la classe *String*, només admet la creació a través del constructor i no admet l'operació de concatenació.
@@ -135,7 +135,7 @@ Alguns dels mètodes dels que disposa són:
 * *length()* - longitud de la cadena
 * *toString()* - converteix a un objecte de la classe *String*  
 
-[Exemple d'utilització de la classe StringBuilder](../src/fonaments/Text.java)
+[Exemple d'utilització de la classe StringBuilder](../src/main/java/fonaments/Text.java)
 
 
 ### 4.3. Classes d'envoltori
@@ -144,7 +144,7 @@ Les classes d'envoltori es troben al paquet *java.lang* i representen als difere
 *Byte, Short, Integer, Long, Float, Double, Character, Boolean*.
 Serveixen per encapsular els tipus primitius en objectes, d'aquesta manera podem crear col·leccions o realitzar determinades operacions que els tipus primitius no permeten.
 
-[Exemple d'utilització de les classes d'envoltori](../src/fonaments/Envoltori.java)
+[Exemple d'utilització de les classes d'envoltori](../src/main/java/fonaments/Envoltori.java)
 
 A partir de Java 5, la conversió entre tipus primitius i classes d'envoltori es realitza automàticament (*autoboxing*).
 

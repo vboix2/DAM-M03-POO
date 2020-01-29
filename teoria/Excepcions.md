@@ -34,7 +34,7 @@ Les **excepcions explícites** no pertanyen a la subclasse *RuntimeException* i 
 ### 4.1. Captura d'excepcions
 El codi susceptible de generar una excepció se situa dins d'un bloc de codi precedit de la paraula reservada **try** i seguit de tants blocs **catch** com excepcions diferents es desitja capturar.
 
-[Exemple de captura d'excepcions](../src/excepcions/Exemple1.java)
+[Exemple de captura d'excepcions](../src/main/java/excepcions/Exemple1.java)
 
 També pot afegir-se un bloc **finally** darrera dels blocs catch que s'executarà sempre, després del bloc try (si no hi ha cap excepció) o després de qualsevol dels blocs catch (si hi ha una excepció).
 
@@ -49,17 +49,17 @@ Una mateixa sentència *catch* permet capturar diferents tipus d'excepcions sepa
 ### 4.2. Delegació de la gestió d'excepcions
 Si no es desitja gestionar l'excepció dins d'un mètode pot delegar-se aquesta tasca al mètode superior amb la paraula **throws** a la capçalera. En aquest cas, el mètode que l'ha cridat haurà de gestionar aquesta excepció o delegar-la a un mètode superior.
 
-[Exemple de delegació](../src/excepcions/Exemple2.java)
+[Exemple de delegació](../src/main/java/excepcions/Exemple2.java)
 
 ## 5. Creació i llançament d'excepcions
 
 El programador pot crear les seves pròpies excepcions creant una classe que derivi de *Exception* o de qualsevol de les seves subclasses.
 
-[Exemple de creació d'una excepció](../src/excepcions/Problema.java)
+[Exemple de creació d'una excepció](../src/main/java/excepcions/Problema.java)
 
 Per llençar un excepció cal crear un objecte d'alguna subclasse de *Exception* que es correspongui amb l'excepció que es vol generar i llençarla amb la sentència **throw** seguida de l'objecte.
 
-[Exemple de llançament d'excepció](../src/excepcions/Exemple3.java)
+[Exemple de llançament d'excepció](../src/main/java/excepcions/Exemple3.java)
 
 ## 6. Recursos
 

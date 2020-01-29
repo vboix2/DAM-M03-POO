@@ -75,7 +75,7 @@ Finalment, podem utilitzar diferents mètodes de la classe *Matcher* per realitz
 
 És important recordar que en els tipus String de Java el caràcter d'escapada és '\\', això vol dir que quan vulguem escriure una expressió regular amb aquest caràcter haurem d'utilitzar '\\\\'.
 
-[Exemples d'utilització d'expressions regulars](../src/regex/Exemples.java)
+[Exemples d'utilització d'expressions regulars](../src/main/java/regex/Exemples.java)
 
 ## 4. Recursos
 
