@@ -10,7 +10,7 @@ Apunts del mòdul 3 de Desenvolupament d'Aplicacions Multiplataforma.
 4. [Col·leccions](./teoria/Colleccions.md)
 5. [Orientació a objectes](./teoria/Objectes.md)
 6. [Expressions regulars](./teoria/Regex.md)
-7. [Persistència en bases de dades]
+7. [Persistència en bases de dades](./teoria/BasesDades.md)
 8. [Streams](./teoria/Streams.md)
 
 ## Activitats
