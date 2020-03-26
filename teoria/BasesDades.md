@@ -111,7 +111,7 @@ public class Contacte implements Serializable{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     int id;
     
-    @Column(name="nom")  //
+    @Column(name="nom")  // Nom de la columna a la BD
     String nom;
     
     @Column(name="telefon")
