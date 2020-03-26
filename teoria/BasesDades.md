@@ -76,12 +76,18 @@ A més, permet la consulta i recuperació de dades de la base de dades.
 Per començar a utilitzar aquesta eina necessitarem importar la llibreria.
 La manera més senzilla és crear un projecte amb Maven i afegir la dependència
 al fitxer `pom.xml`, dins de l'etiqueta `<dependencies>`.
+També necessitarem importar el connector de la base de dades, en aquest cas MySQL.
 
 ```xml
 <dependency>
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-core</artifactId>
     <version>5.4.10.Final</version>
+</dependency>
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.17</version>
 </dependency>
 ```
 
@@ -99,13 +105,13 @@ El mapeig es realitza utilitzant les anotacions `@Entity`, `@Table`, `@Id` i `@C
 
 ```java
 @Entity
-@Table(name="Contacte")
+@Table(name="Contacte")  // Nom de la taula a la BD
 public class Contacte implements Serializable{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     int id;
     
-    @Column(name="nom")
+    @Column(name="nom")  //
     String nom;
     
     @Column(name="telefon")
@@ -116,8 +122,13 @@ public class Contacte implements Serializable{
 [Exemple de classe amb anotacions](../src/main/java/bbdd/hibernate/Contacte.java)
 
 Per indicar la configuració d'hibernate necessitem crear el fitxer `hibernate.cfg.xml`.
-Aquest fitxer s'ha de guardar a la carpeta resources del projecte Maven o al paquet `default-package`.
-El seu contingut és el següent.
+Aquest fitxer s'ha de guardar a la carpeta resources del projecte Maven: src/main/resources.
+El fitxer haurà d'indicar la cadena de connexió a la base de dades,
+l'usuari i contrasenya de la connexió i el nom de la classe a mapejar.
+
+En el següent exemple es realitza una connexió a l'esquema "EsquemaBD" d'una base 
+de dades MySQL, situada a l'adreça `localhost` pel port 3306. La classe on 
+s'emmagatzemen les dades es troba a "paquet.Classe".
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -139,8 +150,6 @@ El seu contingut és el següent.
 </hibernate-configuration>
 ```
 
-L'atribut `class` de l'etiqueta `mapping` indica la localització de la classe a emmagatzemar.
-
 Ara només queda crear el codi d'accés a la base de dades.
 La classe `HibernateUtil.java` permet establir l'accés a la base de dades creant
 un objecte de la classe `SessionFactory`.
@@ -152,6 +161,14 @@ implementi tots els mètodes per consultar, actualitza i inserir dades.
 
 [Implementació dels mètodes per accedir a la base de dades](../src/main/java/bbdd/hibernate/Controlador.java)
 
+Finalment, la classe principal haurà d'instanciar la classe Controlador i utilitzar
+els seus mètodes per interactuar amb la base de dades. Per exemple:
+
+```java
+Controlador ct = new Controlador();
+Contacte contacte = new Contacte("Nom", "telefon");
+ct.inserta(contacte);
+```
 
 ## 4. Recursos
 
