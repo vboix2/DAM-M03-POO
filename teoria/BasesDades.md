@@ -168,6 +168,7 @@ els seus mètodes per interactuar amb la base de dades. Per exemple:
 Controlador ct = new Controlador();
 Contacte contacte = new Contacte("Nom", "telefon");
 ct.inserta(contacte);
+ct.tanca();
 ```
 
 ## 4. Recursos
